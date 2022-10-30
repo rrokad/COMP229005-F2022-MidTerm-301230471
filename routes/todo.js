@@ -9,6 +9,8 @@ let todoController = require('../controllers/todo');
 // Helper function for guard purposes
 function requireAuth(req, res, next)
 {
+    // ADD YOUR CODE HERE
+    
     // check if the user is logged in
     if (!req.isAuthenticated()) {
         req.session.url = req.originalUrl;
@@ -17,7 +19,7 @@ function requireAuth(req, res, next)
         next();
     }
 
-    // ADD YOUR CODE HERE        
+        
 
 }
 
